@@ -1,0 +1,146 @@
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="scripts.js"></script>
+</head>
+
+<body>
+  <div class="app">
+    
+    <div class="sidebar">
+      <div class="user">
+        <img src="Elio.jpg" alt="user photo" class="user-photo">
+        <div class="user-name">Elio</div>
+        <div class="user-mail">elio.dev@email.com</div>
+      </div>
+      <div class="sidebar-menu">
+        <a href="#" class="sidebar-menu__link active">Design</a>
+        <a href="#" class="sidebar-menu__link">Landspace</a>
+        <a href="#" class="sidebar-menu__link">Productivity</a>
+        <a href="#" class="sidebar-menu__link">Workout</a>
+        <a href="#" class="sidebar-menu__link">Book</a>
+        <a href="#" class="sidebar-menu__link">Snack</a>
+      </div>
+      <label class="toggle">
+        <input type="checkbox" id="theme-toggle">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <div class="main">
+      <div class="main-header">
+        <div class="main-header__title">Productivity</div>
+        <div class="main-header__avatars">
+          <img class="main-header__avatar"
+            src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80"
+            alt="avatar">
+          <img class="main-header__avatar"
+            src="https://images.unsplash.com/photo-1683392969197-17547ac3e06e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1587&q=80"
+            alt="avatar">
+          <img class="main-header__avatar"
+            src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1760&q=80"
+            alt="avatar">
+          <button class="add-button"><svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z">
+              </path>
+            </svg></button>
+        </div>
+        <button class="main-header__add">
+          <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"></path>
+          </svg>
+        </button>
+      </div>
+      <div class="main-header-nav">
+        <a href="#" class="nav-item active">All</a>
+        <a href="#" class="nav-item">Videos</a>
+        <a href="#" class="nav-item">Notes</a>
+        <a href="#" class="nav-item">Music</a>
+        <a href="#" class="nav-item">To-do list</a>
+      </div>
+      <div class="main-content">
+        <div class="card card-2 card-img"></div>
+        <div class="card card-3 card-img"></div>
+        <div class="card card-img card-1 card-main"></div>
+        <div class="card card-4 card-img"></div>
+        <div class="card card-img card-5"></div>
+        <div class="card card-6 card-img">
+          <div class="card-track">
+            <div class="card-wrapper">
+              <div class="card">
+                <div class="card-image">
+                  <svg id="svg2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 96">
+                    <path
+                      d="M209.2 35.4L198.4 67.9C195.6 76.2 192.8 84.4 190.1 92.7C189.5 94.8 188.5 95.7 186.2 95.6H164.4C166.8 89 169.1 82.7 171.3 76.4C179.3 54.3 187.4 32.3 195.2 10.2C196.2 7.29997 197.6 6.5 200.6 6.6C207.1 6.8 213.6 6.8 220 6.6C222.2 6.6 223.1 7.29997 223.8 9.19997C232.8 34.3333 241.833 59.3667 250.9 84.3C252.1 87.9 253.4 91.5 254.9 95.6C246.7 95.6 239.2 95.7 231.6 95.5C230.7 95.5 229.6 93.6 229.1 92.4L211.1 38.6C210.8 37.6 210.4 36.5 210 35.5L209.2 35.4Z"
+                      fill="white" />
+                    <path d="M0 95.3V6.79999H49.2V26.3H22.5V75.5H49.2V95.3H0Z" fill="white" />
+                    <path
+                      d="M90.1 95.5L115.5 63.8L92.6 35.1C100.1 35.1 106.8 35 113.5 35.2C114.5 35.3 115.8 36.5 116.6 37.4L126.6 49.8C130.2 45.3 133.5 41.1 137 37.1C137.334 36.6073 137.762 36.1857 138.26 35.8595C138.757 35.5334 139.315 35.3092 139.9 35.2C146.9 35 154 35.1 161.9 35.1L138.4 64.5L163.2 95.5C155.6 95.5 148.9 95.6 142.2 95.4C141.1 95.4 139.9 94.2 139.1 93.2C135.2 88.5 131.5 83.7 127.3 78.5C123.7 83 120.1 87.1 117 91.5C113.9 95.9 112.2 95.9 108.3 95.6C102.6 95.3 96.8 95.5 90.1 95.5Z"
+                      fill="white" />
+                    <path d="M284.3 6.79999V95.2H262.4V6.79999H284.3Z" fill="white" />
+                    <path d="M82.5 95.4H62V35.4H82.5V95.4Z" fill="white" />
+                    <path
+                      d="M83.9 12.1C83.8 18.9 78.8 24 72.1 24C69.0227 23.9217 66.0979 22.644 63.9494 20.4395C61.801 18.235 60.599 15.2782 60.6 12.2C60.5 5.69998 65.9 0 72.2 0C78.5 0 83.9 5.30001 83.9 12.1Z"
+                      fill="white" />
+                    <path
+                      d="M198 79.9C198 73.1 203 67.9 209.7 67.9C211.254 67.9128 212.789 68.2348 214.217 68.8474C215.645 69.46 216.936 70.3508 218.016 71.4679C219.096 72.585 219.942 73.9059 220.506 75.3536C221.07 76.8014 221.34 78.3469 221.3 79.9C221.277 82.9805 220.07 85.9342 217.929 88.1495C215.789 90.3647 212.878 91.6718 209.8 91.8C208.238 91.8136 206.689 91.5143 205.245 90.9199C203.801 90.3254 202.49 89.4477 201.39 88.3386C200.291 87.2295 199.424 85.9115 198.842 84.4622C198.259 83.0129 197.973 81.4617 198 79.9Z"
+                      fill="white" />
+                    <path
+                      d="M27.2 50.9C27.3 44.2 32.7 38.8 39.1 39C42.1948 39.1548 45.1098 40.5008 47.2347 42.7562C49.3596 45.0116 50.5297 48.0015 50.5 51.1C50.5268 52.6617 50.2405 54.2129 49.6583 55.6622C49.076 57.1115 48.2094 58.4296 47.1097 59.5386C46.0099 60.6477 44.6993 61.5254 43.2549 62.1199C41.8106 62.7144 40.2618 63.0136 38.7 63C37.1421 62.988 35.6026 62.6624 34.1733 62.0424C32.744 61.4225 31.4542 60.521 30.3809 59.3917C29.3076 58.2624 28.4728 56.9285 27.9263 55.4696C27.3798 54.0106 27.1328 52.4565 27.2 50.9Z"
+                      fill="white" />
+                  </svg>
+                </div>
+                <div class="card-gradient"></div>
+                <div class="card-letters"></div>
+              </div>
+              <div class="card-corners">
+                <span class="card-corner"></span>
+                <span class="card-corner"></span>
+                <span class="card-corner"></span>
+                <span class="card-corner"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="loading-page">
+    <svg id="svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285 96">
+      <path
+        d="M209.2 35.4L198.4 67.9C195.6 76.2 192.8 84.4 190.1 92.7C189.5 94.8 188.5 95.7 186.2 95.6H164.4C166.8 89 169.1 82.7 171.3 76.4C179.3 54.3 187.4 32.3 195.2 10.2C196.2 7.29997 197.6 6.5 200.6 6.6C207.1 6.8 213.6 6.8 220 6.6C222.2 6.6 223.1 7.29997 223.8 9.19997C232.8 34.3333 241.833 59.3667 250.9 84.3C252.1 87.9 253.4 91.5 254.9 95.6C246.7 95.6 239.2 95.7 231.6 95.5C230.7 95.5 229.6 93.6 229.1 92.4L211.1 38.6C210.8 37.6 210.4 36.5 210 35.5L209.2 35.4Z"
+        fill="white" />
+      <path d="M0 95.3V6.79999H49.2V26.3H22.5V75.5H49.2V95.3H0Z" fill="white" />
+      <path
+        d="M90.1 95.5L115.5 63.8L92.6 35.1C100.1 35.1 106.8 35 113.5 35.2C114.5 35.3 115.8 36.5 116.6 37.4L126.6 49.8C130.2 45.3 133.5 41.1 137 37.1C137.334 36.6073 137.762 36.1857 138.26 35.8595C138.757 35.5334 139.315 35.3092 139.9 35.2C146.9 35 154 35.1 161.9 35.1L138.4 64.5L163.2 95.5C155.6 95.5 148.9 95.6 142.2 95.4C141.1 95.4 139.9 94.2 139.1 93.2C135.2 88.5 131.5 83.7 127.3 78.5C123.7 83 120.1 87.1 117 91.5C113.9 95.9 112.2 95.9 108.3 95.6C102.6 95.3 96.8 95.5 90.1 95.5Z"
+        fill="white" />
+      <path d="M284.3 6.79999V95.2H262.4V6.79999H284.3Z" fill="white" />
+      <path d="M82.5 95.4H62V35.4H82.5V95.4Z" fill="white" />
+      <path
+        d="M83.9 12.1C83.8 18.9 78.8 24 72.1 24C69.0227 23.9217 66.0979 22.644 63.9494 20.4395C61.801 18.235 60.599 15.2782 60.6 12.2C60.5 5.69998 65.9 0 72.2 0C78.5 0 83.9 5.30001 83.9 12.1Z"
+        fill="white" />
+      <path
+        d="M198 79.9C198 73.1 203 67.9 209.7 67.9C211.254 67.9128 212.789 68.2348 214.217 68.8474C215.645 69.46 216.936 70.3508 218.016 71.4679C219.096 72.585 219.942 73.9059 220.506 75.3536C221.07 76.8014 221.34 78.3469 221.3 79.9C221.277 82.9805 220.07 85.9342 217.929 88.1495C215.789 90.3647 212.878 91.6718 209.8 91.8C208.238 91.8136 206.689 91.5143 205.245 90.9199C203.801 90.3254 202.49 89.4477 201.39 88.3386C200.291 87.2295 199.424 85.9115 198.842 84.4622C198.259 83.0129 197.973 81.4617 198 79.9Z"
+        fill="white" />
+      <path
+        d="M27.2 50.9C27.3 44.2 32.7 38.8 39.1 39C42.1948 39.1548 45.1098 40.5008 47.2347 42.7562C49.3596 45.0116 50.5297 48.0015 50.5 51.1C50.5268 52.6617 50.2405 54.2129 49.6583 55.6622C49.076 57.1115 48.2094 58.4296 47.1097 59.5386C46.0099 60.6477 44.6993 61.5254 43.2549 62.1199C41.8106 62.7144 40.2618 63.0136 38.7 63C37.1421 62.988 35.6026 62.6624 34.1733 62.0424C32.744 61.4225 31.4542 60.521 30.3809 59.3917C29.3076 58.2624 28.4728 56.9285 27.9263 55.4696C27.3798 54.0106 27.1328 52.4565 27.2 50.9Z"
+        fill="white" />
+    </svg>
+  </div>
+  
+</body>
+<script>
+  window.addEventListener('load', function () {
+    document.body.classList.add('loaded');
+  });
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+  integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="script.js"></script>
+
+</html>
